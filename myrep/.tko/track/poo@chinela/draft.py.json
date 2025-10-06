@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-29-48",
+            "content": "@@ -1,468 +0,0 @@\n-class Slipper: %0A    def __init__(self):%0A        self.__tamanho = 0%0A%0A    def __str__(self):%0A        return(f%22Seu tamanho de chinel %C3%A9:%7Bself.__tamanho%7D%22)%0A    %0A    def setTamanho(self, value: int):%0A        value = (value%252 == 0)%0A        if value %3C 20 or value %3E 50:%0A            print (%22Esse tamanho de chinela %C3%A9 inv%C3%A1lido%22)%0A            self.__tamanho = 0%0A%0A    def getTamanho(self) -%3E int:%0A        return self.__tamanho%0A    %0AChinela = Slipper()%0AChinela.getTamanho()%0A%0A%0A%0A    %0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-06_19-50-24",
+            "content": "@@ -436,14 +436,8 @@\n r()%0A\n-print(\n Chin\n@@ -452,17 +452,16 @@\n amanho()\n-)\n %0A%0A%0A%0A    \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-06_19-50-37",
+            "content": "@@ -461,10 +461,8 @@\n nho(\n-40\n ))%0A%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-06_19-50-44",
+            "content": "@@ -415,57 +415,8 @@\n     \n-%0A%0Adef main():%0A    while True%0A    line = input()  \n %0AChi\n@@ -461,17 +461,13 @@\n nho(\n+40\n ))%0A\n-main()\n %0A%0A%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-06_19-53-32",
+            "content": "@@ -429,32 +429,8 @@\n ():%0A\n-    Chinela = Slipper()%0A\n     \n@@ -443,81 +443,76 @@\n True\n-:%0A \n+%0A\n     \n-   \n line\n-Tamanho\n  = \n-int(\n input()\n-)\n   %0A\n-    \n Chinela\n-.setTamanho(line\n+ = Slipper()%0Aprint(Chinela.get\n Tamanho\n+()\n )%0Ama\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-06_19-55-52",
+            "content": "@@ -502,20 +502,16 @@\n ut())  %0A\n-    \n     Chin\n@@ -542,69 +542,8 @@\n ho)%0A\n-        print (%22sua chinela de tamanho%22, Chinela.getTamanho)%0A\n main\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-06_19-59-15",
+            "content": "@@ -603,20 +603,16 @@\n amanho)%0A\n-    \n main()%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_19-59-41",
+            "content": "@@ -603,16 +603,20 @@\n amanho)%0A\n+    \n main()%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_19-59-47",
+            "content": "@@ -463,33 +463,12 @@\n ile \n-Chinela.getTamanho() == 0\n+True\n :%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_20-00-34",
+            "content": "@@ -505,21 +505,16 @@\n eTamanho\n-: int\n  = int(i\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_20-00-54",
+            "content": "@@ -498,59 +498,8 @@\n     \n-print (%22Digite o tamanho da sau chinela:%22)%0A        \n line\n@@ -505,16 +505,21 @@\n eTamanho\n+: int\n  = int(i\n@@ -525,16 +525,18 @@\n input())\n+  \n %0A       \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_20-01-38",
+            "content": "@@ -1,678 +1,104 @@\n-class Slipper: %0A    def __init__(self):%0A        self.__tamanho = 0%0A%0A    def __str__(self):%0A        return(f%22Seu tamanho de chinel %C3%A9:%7Bself.__tamanho%7D%22)%0A    %0A    def setTamanho(self, value: int):%0A        value = (value%252 == 0)%0A        if value %3C 20 or value %3E 50:%0A            print (%22Esse tamanho de chinela %C3%A9 inv%C3%A1lido%22)%0A            self.__tamanho = 0%0A%0A    def getTamanho(self) -%3E int:%0A        return self.__tamanho%0A    %0A%0Adef main():%0A    Chinela = Slipper()%0A    while Chinela.getTamanho() == 0:%0A        print (%22Digite o tamanho da sau chinela:%22)%0A        line= int(input())%0A        Chinela.setTamanho(line)%0A        print (%22sua chinela de tamanho%22, Chinela.getTamanho)%0Amain()%0A%0A%0A\n+@@ -549,16 +549,24 @@%0A     line%0A+Tamanho %0A = int(in%0A@@ -603,16 +603,23 @@%0A nho(line%0A+Tamanho%0A )%250A  \n     \n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-10-06_20-02-18",
+            "content": "@@ -523,18 +523,18 @@\n nho da s\n-u\n a\n+u\n  chinela\n@@ -658,20 +658,16 @@\n amanho)%0A\n-    \n main()%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-06_20-03-04",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,684 +1,45 @@%0A-\n class Sl\n@@ -28,17 +28,19 @@\n lipper: \n-%0A\n+%250A\n     def \n@@ -46,33 +46,35 @@\n  __init__(self):\n-%0A\n+%250A\n         self.__t\n@@ -75,34 +75,38 @@\n lf.__tamanho = 0\n-%0A%0A\n+%250A%250A\n     def __str__(\n@@ -111,17 +111,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -130,17 +130,19 @@\n return(f\n-%22\n+%2522\n Seu tama\n@@ -159,11 +159,18 @@\n nel \n-%C3%A9:%7B\n+%25C3%25A9:%257B\n self\n@@ -183,17 +183,25 @@\n anho\n-%7D%22)%0A\n+%257D%2522)%250A\n     \n-%0A\n+%250A\n     \n@@ -233,17 +233,19 @@\n e: int):\n-%0A\n+%250A\n         \n@@ -264,15 +264,19 @@\n ue%252\n+52\n  == 0)\n-%0A\n+%250A\n     \n@@ -292,9 +292,11 @@\n lue \n-%3C\n+%253C\n  20 \n@@ -308,14 +308,18 @@\n lue \n-%3E\n+%253E\n  50:\n-%0A\n+%250A\n     \n@@ -333,17 +333,19 @@\n  print (\n-%22\n+%2522\n Esse tam\n@@ -364,21 +364,35 @@\n ela \n-%C3%A9 inv%C3%A1lido%22)%0A\n+%25C3%25A9 inv%25C3%25A1lido%2522)%250A\n     \n@@ -417,18 +417,22 @@\n anho = 0\n-%0A%0A\n+%250A%250A\n     def \n@@ -453,15 +453,19 @@\n f) -\n-%3E\n+%253E\n  int:\n-%0A\n+%250A\n     \n@@ -493,15 +493,21 @@\n anho\n-%0A\n+%250A\n     \n-%0A%0A\n+%250A%250A\n def \n@@ -513,17 +513,19 @@\n  main():\n-%0A\n+%250A\n     Chin\n@@ -539,17 +539,19 @@\n lipper()\n-%0A\n+%250A\n     whil\n@@ -578,17 +578,19 @@\n () == 0:\n-%0A\n+%250A\n         \n@@ -596,17 +596,19 @@\n  print (\n-%22\n+%2522\n Digite o\n@@ -635,11 +635,15 @@\n ela:\n-%22)%0A\n+%2522)%250A\n     \n@@ -665,17 +665,19 @@\n input())\n-%0A\n+%250A\n         \n@@ -700,17 +700,19 @@\n ho(line)\n-%0A\n+%250A\n         \n@@ -718,17 +718,19 @@\n  print (\n-%22\n+%2522\n sua chin\n@@ -747,9 +747,11 @@\n anho\n-%22\n+%2522\n , Ch\n@@ -767,17 +767,19 @@\n Tamanho)\n-%0A\n+%250A\n     main\n@@ -784,12 +784,75 @@\n in()\n-%0A%0A%0A    \n+%250A%250A%250A    %0A+@@ -549,17 +549,16 @@%250A     line%250A- %250A = int(in%0A %250A\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-06_20-03-18",
+            "content": "@@ -606,21 +606,16 @@\n         \n-%0A    \n print (%22\n@@ -663,17 +663,16 @@\n ho)%0A    \n-%0A\n main()%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-06_20-04-16",
+            "content": "@@ -199,75 +199,30 @@\n     \n-print(value);%0A        value = (value%252 == 0)%0A        print(value);%0A\n+value = (value%252 == 0)\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-06_20-08-48",
+            "content": "@@ -199,53 +199,110 @@\n     \n-if value %3C 20 or value %3E 50 and\n+print(value);%0A        value = (value%252 == 0)%0A        print(value);%0A%0A        if\n  value \n-%25 2 != \n+%3C 20 or value %3E 5\n 0:%0A \n@@ -365,32 +365,8 @@\n     \n-        return%0A        %0A\n     \n@@ -390,23 +390,9 @@\n o = \n-value%0A        %0A\n+0\n %0A%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-06_20-15-27",
+            "content": "class Slipper: \n    def __init__(self):\n        self.__tamanho = 0\n\n    def __str__(self):\n        return(f\"Seu tamanho de chinel \u00e9:{self.__tamanho}\")\n    \n    def setTamanho(self, value: int):\n        if value < 20 or value > 50 and value % 2 != 0:\n            print (\"Esse tamanho de chinela \u00e9 inv\u00e1lido\")\n            return\n        \n        self.__tamanho = value\n        \n\n\n    def getTamanho(self) -> int:\n        return self.__tamanho\n    \n\ndef main():\n    Chinela = Slipper()\n    while Chinela.getTamanho() == 0:\n        print (\"Digite o tamanho da sua chinela:\")\n        line = int(input())\n        Chinela.setTamanho(line)\n        \n    print (\"sua chinela de tamanho\", Chinela.getTamanho)\n    \nmain()\n\n\n    \n",
+            "lines": "33"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_18-57-30",
+            "content": "@@ -307,25 +307,16 @@\n   return\n-%0A        \n         \n@@ -323,64 +323,8 @@\n    %0A\n-    def getSize(self) -%3E str:%0A        return self.__size\n     \n@@ -386,9 +386,9 @@\n isa.\n-g\n+s\n etSi\n@@ -498,16 +498,24 @@\n (line)%0A%0A\n+        \n %0A%0Amain()\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-07_18-59-23",
+            "content": "@@ -459,24 +459,14 @@\n ize \n-!= Camisa.setSiz\n+== Tru\n e:%0A \n@@ -567,64 +567,8 @@\n e)%0A%0A\n-    print(%22O tamanho da sua camisa %C3%A9: %22, Camisa.getSize)\n %0A%0Ama\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-07_19-02-15",
+            "content": "@@ -617,25 +617,25 @@\n : %22, Camisa.\n-s\n+g\n etSize)%0A%0Amai\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-07_19-03-36",
+            "content": "@@ -146,44 +146,39 @@\n PP%22 \n-and\n+or\n  %22P%22 \n-and\n+or\n  %22M%22 \n-and %22G%22 and\n+or%22 G%22 or\n  %22GG%22 \n-and\n+or\n  %22XG\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-07_19-04-56",
+            "content": "@@ -146,39 +146,44 @@\n PP%22 \n-or\n+and\n  %22P%22 \n-or\n+and\n  %22M%22 \n-or%22 G%22 or\n+and %22G%22 and\n  %22GG%22 \n-or\n+and\n  %22XG\n@@ -398,21 +398,16 @@\n        %0A\n-    %0A\n def main\n@@ -630,17 +630,15 @@\n isa.\n-g\n+s\n etSize\n-()\n )%0A%0Am\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-07_19-07-21",
+            "content": "@@ -28,16 +28,27 @@\n t__(self\n+, size: str\n ):%0A     \n@@ -65,18 +65,15 @@\n size\n-: str = %22%22\n+ = size\n %0A%0A  \n@@ -430,16 +430,19 @@\n  Tshirt(\n+%22 %22\n )%0A    wh\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_19-08-41",
+            "content": "@@ -125,17 +125,17 @@\n eAceppt \n-!\n+=\n = (%22PP%22 \n@@ -188,103 +188,104 @@\n     \n-print (%22Esse tamanho de camisa %C3%A9 inv%C3%A1lido%22) %0A        else:%0A            sizeAceppt = self.__size\n+ sizeAceppt = self.__size%0A        else:%0A            print (%22Esse tamanho de camisa %C3%A9 inv%C3%A1lido%22) \n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_19-10-04",
+            "content": "@@ -241,21 +241,18 @@\n     \n- return\n+else:\n %0A    \n-%0A\n     \n@@ -287,24 +287,31 @@\n %0A           \n+ return\n %0A           \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_19-10-53",
+            "content": "@@ -241,18 +241,21 @@\n     \n-else:\n+ return\n %0A    \n+%0A\n     \n@@ -290,31 +290,24 @@\n %0A           \n- return\n %0A           \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_19-44-23",
+            "content": "@@ -152,15 +152,10 @@\n %22M%22 \n-) and (\n+or\n %22 G%22\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_19-50-36",
+            "content": "@@ -138,47 +138,44 @@\n PP%22 \n-and\n+or\n  %22P%22 \n-and\n+or\n  %22M%22 ) \n-or\n+and\n  (%22 G%22 \n-and\n+or\n  %22GG%22 \n-and\n+or\n  %22XG\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_19-52-26",
+            "content": "@@ -138,39 +138,47 @@\n PP%22 \n-or\n+and\n  %22P%22 \n-or\n+and\n  %22M%22\n+ )\n  or\n+ (\n %22 G%22 \n-or\n+and\n  %22GG%22 \n-or\n+and\n  %22XG\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_20-12-21",
+            "content": "@@ -132,119 +132,51 @@\n  != \n+(\n %22PP%22 \n-and sizeAceppt!= %22P%22 and sizeAceppt!= %22M%22 and sizeAceppt!= %22G%22 and sizeAceppt!= %22GG%22 and sizeAceppt!=\n+or %22P%22 or %22M%22 or%22 G%22 or %22GG%22 or\n  %22XG%22\n+)\n :%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_20-18-23",
+            "content": "@@ -634,20 +634,16 @@\n (line)%0A%0A\n-    \n     prin\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_20-19-22",
+            "content": "@@ -701,21 +701,8 @@\n ())%0A\n-        break\n %0Amai\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_20-20-16",
+            "content": "class Tshirt:\n    def __init__(self):\n        self.__size: str = \"\"\n\n    def setSize (self, sizeAceppt: str):\n        if sizeAceppt != \"PP\" and sizeAceppt!= \"P\" and sizeAceppt!= \"M\" and sizeAceppt!= \"G\" and sizeAceppt!= \"GG\" and sizeAceppt!= \"XG\":\n           print (\"Esse tamanho de camisa \u00e9 inv\u00e1lido\") \n        else:\n            sizeAceppt = self.__size\n            return\n                   \n    def getSize(self) -> str:\n        return self.__size        \n    \ndef main():\n    Camisa = Tshirt()\n    while Camisa.getSize != Camisa.setSize:\n        print (\"Informe o tamanho da roupa:\")\n        line = input()\n        Camisa.setSize(line)\n\n        print(\"O tamanho da sua camisa \u00e9: \", Camisa.getSize())\n        break\nmain()",
+            "lines": "24"
+        }
+    ]
+}

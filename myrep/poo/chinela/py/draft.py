@@ -25,7 +25,7 @@ def main():
         line = int(input())
         Chinela.setTamanho(line)
         
-    print ("sua chinela de tamanho", Chinela.getTamanho())
+    print ("Sua chinela é de tamanho: ", Chinela.getTamanho())
     
 main()
 

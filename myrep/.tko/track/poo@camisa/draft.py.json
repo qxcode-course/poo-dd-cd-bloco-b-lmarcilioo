@@ -77,8 +77,18 @@
         },
         {
             "label": "2025-10-07_20-20-16",
-            "content": "class Tshirt:\n    def __init__(self):\n        self.__size: str = \"\"\n\n    def setSize (self, sizeAceppt: str):\n        if sizeAceppt != \"PP\" and sizeAceppt!= \"P\" and sizeAceppt!= \"M\" and sizeAceppt!= \"G\" and sizeAceppt!= \"GG\" and sizeAceppt!= \"XG\":\n           print (\"Esse tamanho de camisa \u00e9 inv\u00e1lido\") \n        else:\n            sizeAceppt = self.__size\n            return\n                   \n    def getSize(self) -> str:\n        return self.__size        \n    \ndef main():\n    Camisa = Tshirt()\n    while Camisa.getSize != Camisa.setSize:\n        print (\"Informe o tamanho da roupa:\")\n        line = input()\n        Camisa.setSize(line)\n\n        print(\"O tamanho da sua camisa \u00e9: \", Camisa.getSize())\n        break\nmain()",
+            "content": "@@ -328,31 +328,31 @@\n    s\n-elf.__size = sizeAceppt\n+izeAceppt = self.__size\n %0A   \n@@ -505,11 +505,39 @@\n ile \n-Tru\n+Camisa.getSize != Camisa.setSiz\n e:%0A \n@@ -681,10 +681,9 @@\n %C3%A9: %22\n- +\n+,\n  Cam\n",
             "lines": "24"
+        },
+        {
+            "label": "2025-10-12_19-20-20",
+            "content": "@@ -301,32 +301,8 @@\n %22) %0A\n-           return False%0A\n     \n@@ -366,21 +366,16 @@\n   return\n- True\n %0A       \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-12_19-27-38",
+            "content": "class Tshirt:\n    def __init__(self):\n        self.__size: str = \"\"\n\n    def setSize (self, sizeAceppt: str):\n        if sizeAceppt != \"PP\" and sizeAceppt!= \"P\" and sizeAceppt!= \"M\" and sizeAceppt!= \"G\" and sizeAceppt!= \"GG\" and sizeAceppt!= \"XG\":\n           print (\"Esse tamanho de camisa \u00e9 inv\u00e1lido\") \n           return False\n        else:\n            self.__size = sizeAceppt\n            return True\n                   \n    def getSize(self) -> str:\n        return self.__size        \n    \ndef main():\n    Camisa = Tshirt()\n    while True:\n        print (\"Informe o tamanho da roupa:\")\n        line = input()\n        Camisa.setSize(line)\n\n        print(\"O tamanho da sua camisa \u00e9: \" + Camisa.getSize())\n        break\nmain()",
+            "lines": "25"
         }
     ]
 }

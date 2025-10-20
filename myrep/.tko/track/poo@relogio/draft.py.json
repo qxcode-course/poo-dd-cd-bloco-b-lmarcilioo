@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-20_19-09-55",
+            "content": "@@ -1,19 +1,21 @@\n class \n-Watch\n+Relogio\n :%0A    de\n@@ -242,269 +242,8 @@\n 2%7D%22%0A\n-%0A%0Adef main():%0A    relogio = Watch(0,0,0)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split (%22%22)%0A        if args %5B0%5D == %22end%22:%0A            break%0A        if args %5B0%5D == %22show%22:%0A            print(relogio)%0Amain()\n+    \n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-20_19-15-00",
+            "content": "@@ -386,17 +386,16 @@\n split (%22\n- \n %22)%0A     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-20_19-15-08",
+            "content": "@@ -500,191 +500,8 @@\n io)%0A\n-        if args %5B0%5D == %22set%22:%0A            hora: int = int(args%5B1%5D)%0A            min: int = int(args %5B2%5D)%0A            seg: int = int(args %5B3%5D)%0A            relogio = Watch(hora,min,seg)%0A\n main\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-20_19-17-15",
+            "content": "@@ -241,158 +241,8 @@\n %7D%22%0A%0A\n-    def setTime (self,timeAccept: int):%0A        if self.__hora %3E 23 and self.__min %3E 59 and self.__seg %3E 59:%0A            print(%22fail: hora invalida%22)%0A\n %0Adef\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-20_19-21-24",
+            "content": "@@ -252,24 +252,29 @@\n  set\n-Hora\n+Time \n (self,\n- valor\n+timeAccept\n : in\n@@ -292,215 +292,106 @@\n  if \n-val\n+self.__h\n or\n+a\n  %3E 23 \n-or valor %3C 0:%0A            print(%22fail: hora invalida%22)%0A            return%0A        self.__hora = valor%0A%0A    def setMin (self, valor:int):%0A        if valor %3E 59 or valor %3C 0:%0A            print()    \n+and self.__min %3E 59 and self.__seg %3E 59:%0A            print(%22fail: hora invalida%22)\n %0A%0Ade\n@@ -833,42 +833,8 @@\n eg)%0A\n-            relogio.setHora(hora)%0A\n main\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-20_19-54-13",
+            "content": "@@ -376,16 +376,35 @@\n         \n+self.__hora = valor\n %0A%0A    de\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-20_19-54-53",
+            "content": "@@ -365,27 +365,23 @@\n     \n-self.__hora = valor\n+return%0A        \n %0A%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-20_19-55-30",
+            "content": "@@ -357,23 +357,8 @@\n     \n-        return%0A\n     \n@@ -386,60 +386,8 @@\n or%0A%0A\n-    def getHora (self):%0A        return self.__hora%0A%0A\n     \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-20_20-02-49",
+            "content": "@@ -359,32 +359,40 @@\n           return\n+%0A       \n  self.__hora = v\n@@ -395,25 +395,16 @@\n  = valor\n-%0A        \n %0A%0A    de\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-20_20-03-02",
+            "content": "@@ -367,24 +367,16 @@\n   return\n-%0A       \n  self.__\n@@ -387,16 +387,25 @@\n  = valor\n+%0A        \n %0A%0A    de\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-20_20-03-14",
+            "content": "@@ -848,16 +848,21 @@\n     hora\n+: int\n  = int(a\n@@ -879,16 +879,121 @@\n         \n+  min: int = int(args %5B2%5D)%0A            seg: int = int(args %5B3%5D)%0A            relogio = Watch(hora,min,seg)\n %0A       \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-20_20-04-21",
+            "content": "@@ -141,35 +141,8 @@\n  seg\n-%0A        self.setHora(hora)\n %0A%0A  \n@@ -848,21 +848,16 @@\n     hora\n-: int\n  = int(a\n@@ -878,113 +878,8 @@\n     \n-  min: int = int(args %5B2%5D)%0A            seg: int = int(args %5B3%5D)%0A            relogio = Watch(hora,min,seg)\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-20_20-05-59",
+            "content": "@@ -83,17 +83,20 @@\n _hora = \n-0\n+hora\n %0A       \n@@ -109,17 +109,19 @@\n __min = \n-0\n+min\n %0A       \n@@ -134,17 +134,19 @@\n __seg = \n-0\n+seg\n %0A       \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-20_20-06-18",
+            "content": "@@ -83,20 +83,17 @@\n _hora = \n-hora\n+0\n %0A       \n@@ -106,19 +106,17 @@\n __min = \n-min\n+0\n %0A       \n@@ -129,19 +129,44 @@\n __seg = \n-seg\n+0%0A        self.setHora(hora)\n %0A%0A    de\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-20_20-06-32",
+            "content": "class Watch:\n    def __init__(self, hora: int, min: int, seg: int):\n        self.__hora = hora\n        self.__min = min\n        self.__seg = seg\n\n    def __str__(self) -> str:\n        return f\"{self.__hora:02}:{self.__min:02}:{self.__seg:02}\"\n\n    def setHora(self, valor: int):\n        if valor > 23 or valor < 0:\n            print(\"fail: hora invalida\")\n            return\n        self.__hora = valor\n\n    def getHora (self):\n        return self.__hora\n\n    def setMin (self, valor:int):\n        if valor > 59 or valor < 0:\n            print()    \n\ndef main():\n    relogio = Watch(0,0,0)\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split (\" \")\n        if args [0] == \"end\":\n            break\n        if args [0] == \"show\":\n            print(relogio)\n        if args [0] == \"set\":\n            hora: int = int(args[1])\n            min: int = int(args [2])\n            seg: int = int(args [3])\n            relogio = Watch(hora,min,seg)\n            relogio.setHora(hora)\nmain()",
+            "lines": "39"
+        }
+    ]
+}

@@ -1,10 +1,16 @@
 class Pessoa:
     def __init__ (self, nome: str, idade: int):
-        self.nome = nome
-        self.idade = idade
+        self.__nome = nome
+        self.__idade = idade
 
     def __str__ (self):
-        return f"{self.nome}:{self.idade}"
+        return f"{self.__nome}:{self.__idade}"
+    
+    def getIdade(self):
+        return self.__idade
+    
+    def getNome(self):
+        return self.__nome
     
 class moto:     
     def __init__ (self, potencia: int = 1, tempo: int = 0):
@@ -43,9 +49,23 @@ class moto:
     def comprarTempo(self, amount: int):
         self.__tempo += amount
     
-    def drive(self, time:int):
+    def drive(self, distance:int):
         if self.__tempo == 0:
             print("fail: buy time first")
+        elif self.__pessoa == None:
+            print ("fail: empty motorcycle")
+        elif self.__pessoa.getIdade() > 10:
+            print ("fail: too old to drive")
+        elif self.__tempo < distance:
+            distance = self.__tempo
+            self.__tempo = 0
+            print(f"fail: time finished after {distance} minutes")
+        else:
+            self.__tempo -= distance
+    
+    def buzinar (self):
+        som = "e" * self.__potencia
+        print(f"P{som}m")
 
 
 def main ():
@@ -72,7 +92,8 @@ def main ():
             motoca.comprarTempo(amount)
         if args [0] == "drive":
             motoca.drive(int(args[1]))
-
-
+        if args [0] == "honk":
+            motoca.buzinar()
+        
 
 main ()

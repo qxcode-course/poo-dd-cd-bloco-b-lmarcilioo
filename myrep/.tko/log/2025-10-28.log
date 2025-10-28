@@ -1,0 +1,21 @@
+2025-10-28 15:58:15, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-28 15:58:17, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:55
+2025-10-28 17:10:10, SELF, v:1, k:poo@chinela, rate:100, human:monitor_e_amigo, alone:8, study:120
+2025-10-28 17:11:27, SELF, v:1, k:poo@camisa, rate:100, human:amigo_e_monitor, alone:8, study:120
+2025-10-28 17:11:31, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-28 17:11:32, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-28 17:12:04, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:23
+2025-10-28 17:15:24, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:26
+2025-10-28 17:16:56, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:29
+2025-10-28 17:17:06, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-28 17:17:13, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:29
+2025-10-28 17:17:37, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:29
+2025-10-28 17:20:21, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:32
+2025-10-28 17:21:03, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:32
+2025-10-28 17:21:45, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:32
+2025-10-28 17:22:19, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:32
+2025-10-28 17:22:29, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100, size:32
+2025-10-28 17:22:43, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-28 17:23:03, SELF, v:1, k:poo@roupa, rate:100, alone:10, study:30
+2025-10-28 17:23:35, SELF, v:1, k:poo@relogio, rate:100, human:amigo, alone:7, study:150
+2025-10-28 17:25:18, SELF, v:1, k:poo@motoca, rate:100, human:amigo, iagen:gpt_para_retirada_de_duvidas_sobre_erros, alone:6, study:260

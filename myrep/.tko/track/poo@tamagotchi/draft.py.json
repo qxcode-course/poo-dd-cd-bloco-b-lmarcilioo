@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-27_21-28-09",
+            "content": "@@ -1,122 +0,0 @@\n-class Tamagochi:%0A    def __init__ (self, energy: int, clean: int):%0A        self.energy = energy%0A        self.clean = clean\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-27_21-34-58",
+            "content": "@@ -119,530 +119,4 @@\n lean\n-%0A        self.age = 0%0A    %0A    def __str__ (self):%0A        return f%22E:%7Bself.energy%7D, L:%7Bself.clean%7D, I%7Bself.age%7D%22%0A%0A%0A%0Adef main ():%0A    bichinho = Tamagochi%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22%22)%0A        if args %5B0%5D == %22end%22:%0A             break%0A        elif args %5B0%5D == %22init%22:%0A            energy:int = int(args%5B1%5D)%0A            clean: int = int(args%5B2%5D)%0A            bichinho = Tamagochi(energy,clean)%0A        elif args %5B0%5D == %22show%22:%0A            print(bichinho)\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-27_21-42-51",
+            "content": "@@ -302,13 +302,8 @@\n line\n-: str\n  = i\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-27_21-43-27",
+            "content": "@@ -217,17 +217,16 @@\n lean%7D, I\n-:\n %7Bself.ag\n@@ -273,14 +273,8 @@\n ochi\n- (0,0)\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-27_21-44-45",
+            "content": "@@ -271,16 +271,21 @@\n magochi \n+(0,0)\n %0A    whi\n@@ -385,17 +385,16 @@\n .split(%22\n- \n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-27_21-45-13",
+            "content": "@@ -232,16 +232,17 @@\n age%7D%22%0A%0A%0A\n+%0A\n def main\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-27_21-47-16",
+            "content": "@@ -264,12 +264,18 @@\n o = \n-None\n+Tamagochi \n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-27_21-52-00",
+            "content": "class Tamagochi:\n    def __init__ (self, energy: int, clean: int):\n        self.energy = energy\n        self.clean = clean\n        self.age = 0\n    \n    def __str__ (self):\n        return f\"E:{self.energy}, L:{self.clean}, I:{self.age}\"\n\n\ndef main ():\n    bichinho = None\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args [0] == \"end\":\n             break\n        elif args [0] == \"init\":\n            energy:int = int(args[1])\n            clean: int = int(args[2])\n            bichinho = Tamagochi(energy,clean)\n        elif args [0] == \"show\":\n            print(bichinho)",
+            "lines": "24"
+        }
+    ]
+}

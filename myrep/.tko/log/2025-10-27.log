@@ -1,0 +1,29 @@
+2025-10-27 20:50:39, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-27 20:50:40, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:41
+2025-10-27 21:15:42, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:53
+2025-10-27 21:17:08, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:54
+2025-10-27 21:20:49, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:51
+2025-10-27 21:27:54, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-27 21:28:05, MOVE, v:1, k:poo@tamagotchi, mode:DOWN
+2025-10-27 21:28:08, MOVE, v:1, k:poo@tamagotchi, mode:PICK
+2025-10-27 21:28:09, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:0
+2025-10-27 21:34:58, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:4
+2025-10-27 21:35:01, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:42:51, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:25
+2025-10-27 21:42:59, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:43:00, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:43:00, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:43:27, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:25
+2025-10-27 21:43:48, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:43:48, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:43:48, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:43:48, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:44:45, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:25
+2025-10-27 21:45:13, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:25
+2025-10-27 21:46:39, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:47:16, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:24
+2025-10-27 21:47:27, EXEC, v:1, k:poo@tamagotchi, mode:FREE
+2025-10-27 21:48:48, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:51:03, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0
+2025-10-27 21:52:00, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:24
+2025-10-27 21:59:51, MOVE, v:1, k:poo@tamagotchi, mode:BACK

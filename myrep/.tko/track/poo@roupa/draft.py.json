@@ -52,8 +52,58 @@
         },
         {
             "label": "2025-10-20_18-58-37",
-            "content": "class Tshirt:\n    def __init__(self):\n        self.__size: str = \" \"\n\n    def setSize (self, sizeAceppt: str):\n        if sizeAceppt != \"PP\" and sizeAceppt!= \"P\" and sizeAceppt!= \"M\" and sizeAceppt!= \"G\" and sizeAceppt!= \"GG\" and sizeAceppt!= \"XG\":\n           print (\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\") \n        else:\n            self.__size = sizeAceppt\n            return \n                   \n    def getSize(self) -> str:\n        return self.__size        \n    \ndef main():\n    Camisa = Tshirt()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split (\" \")\n        if args [0] == \"show\":\n           print (f\"size: {Camisa}\")\n        if args [0] == \"size\":\n            main()",
+            "content": "@@ -59,16 +59,17 @@\n  str = %22\n+ \n %22%0A%0A    d\n@@ -116,58 +116,137 @@\n     \n-availableSizes \n+if sizeAceppt !\n = \n-%5B\n %22PP%22\n-, %22P%22, %22M%22, %22G%22, %22GG%22,\n+ and sizeAceppt!= %22P%22 and sizeAceppt!= %22M%22 and sizeAceppt!= %22G%22 and sizeAceppt!= %22GG%22 and sizeAceppt!=\n  %22XG%22\n-%5D\n+:\n %0A   \n@@ -254,49 +254,85 @@\n     \n-if sizeAceppt.upper() in availableSizes: \n+   print (%22fail: Valor inv%C3%A1lido, tente PP, P, M, G, GG ou XG%22) %0A        else:\n %0A   \n@@ -368,16 +368,8 @@\n eppt\n-.upper()\n %0A   \n@@ -387,73 +387,8 @@\n turn\n-%0A        print (%22Esse tamanho de camisa %C3%A9 inv%C3%A1lido%22) %0A           \n  %0A  \n@@ -523,31 +523,41 @@\n ile \n-Camisa.getSize() == %22%22:\n+True:%0A        line: str = input()\n %0A   \n@@ -570,152 +570,175 @@\n rint\n- \n (%22\n-Informe o tamanho da roupa:%22)%0A        line\n+$%22 + line)%0A        args: list%5Bstr%5D\n  = \n+l\n in\n-put()%0A        Camisa.setSize(line)%0A    print(%22O tamanho da sua camisa %C3%A9: %22+ Camisa.getSize())%0A\n+e.split (%22 %22)%0A        if args %5B0%5D == %22show%22:%0A           print (f%22size: %7BCamisa%7D%22)%0A        if args %5B0%5D == %22size%22:%0A            \n main\n",
             "lines": "24"
+        },
+        {
+            "label": "2025-10-28_17-12-04",
+            "content": "@@ -480,191 +480,188 @@\n ile \n-True:%0A        line: str = input()%0A        args: list%5Bstr%5D\n+Camisa.getSize() == %22%22:%0A        print (%22Informe o tamanho da roupa:%22)%0A        line\n  = \n-l\n in\n-e.split(%22 %22)%0A        if args %5B0%5D == %22end%22:%0A            break%0A        elif args %5B0%5D == %22show%22:%0A            print(Camisa)%0A\n+put()%0A        Camisa.setSize(line)%0A    print(%22O tamanho da sua camisa %C3%A9: %22+ Camisa.getSize())\n %0Amai\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-28_17-15-24",
+            "content": "@@ -514,34 +514,8 @@\n t()%0A\n-        print (%22$%22+ line)%0A\n     \n@@ -662,68 +662,8 @@\n isa)\n-%0A        elif args %5B0%5D == %22size%22:%0A            Camisa.setSize\n %0A%0Ama\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-28_17-16-56",
+            "content": "@@ -683,18 +683,16 @@\n t(Camisa\n-()\n )%0A      \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-28_17-17-13",
+            "content": "@@ -63,16 +63,8 @@\n  = %22\n-size: ()\n %22%0A%0A \n@@ -683,16 +683,18 @@\n t(Camisa\n+()\n )%0A      \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-28_17-17-37",
+            "content": "@@ -63,72 +63,15 @@\n  = %22\n-%22%0A%0A    def __str__ (self):%0A        return f%22size: (%7Bself.__size%7D\n+size: (\n )%22%0A%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-28_17-20-21",
+            "content": "@@ -361,57 +361,41 @@\n t (%22\n-fail: Valor inv%C3%A1lido, tente PP, P, M, G, GG OU XG\n+Esse tamanho de camisa %C3%A9 inv%C3%A1lido\n %22) %0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-28_17-21-02",
+            "content": "@@ -818,17 +818,17 @@\n  Camisa.\n-g\n+s\n etSize%0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-28_17-21-45",
+            "content": "@@ -822,24 +822,15 @@\n isa.\n-s\n+g\n etSize\n-(args%5B1%5D)\n %0A%0Ama\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-28_17-22-19",
+            "content": "@@ -405,10 +405,10 @@\n  GG \n-ou\n+OU\n  XG%22\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-28_17-22-29",
+            "content": "class Tshirt:\n    def __init__(self):\n        self.__size: str = \"\"\n\n    def __str__ (self):\n        return f\"size: ({self.__size})\"\n\n    def setSize (self, sizeAceppt: str):\n        availableSizes = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if sizeAceppt.upper() in availableSizes: \n            self.__size = sizeAceppt.upper()\n            return\n        print (\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\") \n            \n                   \n    def getSize(self) -> str:\n        return self.__size        \n    \ndef main():\n    Camisa = Tshirt()\n    while True:\n        line: str = input()\n        print (\"$\"+ line)\n        args: list[str] = line.split(\" \")\n        if args [0] == \"end\":\n            break\n        elif args [0] == \"show\":\n            print(Camisa)\n        elif args [0] == \"size\":\n            Camisa.setSize(args[1])\n\nmain()",
+            "lines": "32"
         }
     ]
 }
